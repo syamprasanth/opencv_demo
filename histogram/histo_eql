@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 
-image = cv2.imread('moon.jpeg')
+image = cv2.imread('night.jpg')
 grayscale_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 eql_grayscale_image = cv2.equalizeHist(grayscale_image)
