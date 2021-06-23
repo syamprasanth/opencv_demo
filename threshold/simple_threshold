@@ -1,0 +1,12 @@
+import cv2
+
+img=cv2.imread("news.jpeg")
+gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+gauss_blur=cv2.GaussianBlur(gray_img,(3,3),20)
+
+thresh,threshold_img=cv2.threshold(gauss_blur,100,255,cv2.THRESH_BINARY)
+
+cv2.imshow("thresholded image",threshold_img)
+cv2.imwrite("thresholded_news.jpg",threshold_img)
+print("threshold value is : ",thresh)
+cv2.waitKey()
