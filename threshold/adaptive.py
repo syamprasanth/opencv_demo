@@ -10,3 +10,4 @@ cv2.imshow("thresholded image",adaptive)
 cv2.imwrite("adaptive.jpg",adaptive)
 #print("threshold value is : ",thresh)
 cv2.waitKey()
+poo da dai
